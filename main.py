@@ -44,7 +44,7 @@ class Window(QMainWindow, Ui_MainWindow):
         return video_id
         
     def url_to_thumbnail(self, video_id):
-        url = "https://img.youtube.com/vi/{}/maxresdefault.jpg".format(video_id)
+        url = f"https://i.ytimg.com/vi/{video_id}/hqdefault.jpg?"
         print(f"Thumbnail URL: {url}")
         data = request.urlopen(url).read()
 
